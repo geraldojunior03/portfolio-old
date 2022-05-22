@@ -16,4 +16,4 @@ Deseja acessar por link? <a href="https://geraldojunior03.github.io/portfolio/">
 
 ### Sobre o Portfolio
 
-Ainda estou desenvolvendo toda a parte de responsividade, por isso 
+Ainda estou desenvolvendo toda a parte de responsividade, por isso caso você tente navegar pelo celular, você vai acabar se deparando com um site nada responsivo!
