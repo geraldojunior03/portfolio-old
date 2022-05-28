@@ -25,8 +25,6 @@
 
 
 html {
-    background: #434343;
-    background: -webkit-linear-gradient(to right, #141414, #434343);
     background: linear-gradient(to right, #141414, #434343);
     scroll-behavior: smooth;
 }
@@ -68,6 +66,7 @@ ul {
     color: var(--white);
     border: none;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .ctn:hover {
@@ -82,6 +81,7 @@ ul {
 
 .navbar-links a {
     color: var(--white);
+    transition: 0.5s;
 }
 
 .navbar-links a:hover {
@@ -94,6 +94,7 @@ ul {
 .introduction-section {
     margin-top: 4.5em;
     display: flex;
+    flex-direction: row;
     height: 100%;
     width: 100%;   
     align-items: center;
@@ -103,7 +104,6 @@ ul {
 }
 
 .introduction-main-section {
-    display: flex;
     font-size: 25px;
     align-items: center;
     flex-direction: column;
@@ -134,7 +134,7 @@ ul {
     border-radius: 3em;
 }
 
-/* start knowledges section  */
+/* KNOWLEDGES */
 
 .knowledges-main-section {
     display: flex;
@@ -153,16 +153,18 @@ ul {
     margin: 0 auto;
     text-align: center;
     width: 30vw;
+    margin-bottom: 20px;
 }
 
-/* cards */
+/* CARDS */
 
-.programming-skills-firstline {
-    display: flex;
+.programming-skills {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
     margin-top: 50px;
     gap: 5em;
     justify-content: center;
-    align-items: center;
+    margin: 0 auto;
 }
 
 .card {
@@ -185,7 +187,7 @@ ul {
     height: 150px;
 }
 
-/* frameworks  */
+/* FRAMEWORKS  */
 
 .frameworks-section {
     margin-top: 50px;
@@ -203,8 +205,9 @@ ul {
     text-align: center;
 }
 
-.frameworks-skills-firstline {
-    display: flex;
+.frameworks-skills {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
     justify-content: center;
     gap: 5em;
     align-items: center;
@@ -215,7 +218,7 @@ ul {
     margin-top: 30px;
 }
 
-/* projects */
+/* PROJECTS */
 
 .projects {
     display: flex;
@@ -239,8 +242,7 @@ ul {
     padding: 15px 15px 20px 15px;
     color: var(--black);
     text-align: center;
-    transition: 0.2s;
-
+    transition: 0.5s;
 }
 
 .project-link {
@@ -252,10 +254,13 @@ ul {
 }
 
 .project-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
     justify-content: space-evenly;
     gap: 30px;
 }
+
+/* ABOUT SECTION */
 
 .about-section {
     display: flex;
@@ -290,6 +295,8 @@ ul {
     height: 600px;
 }
 
+/* FOOTER */
+
 footer {
     display: flex;
     height: 200px;
@@ -301,4 +308,88 @@ footer {
 
 .footer h1 {
     font-size: 1.5em;
+}
+
+.social-links {
+    color: var(--main-color);
+}
+
+.social-links:active {
+    color: var(--main-color);
+}
+
+/* RESPONSIVE */
+
+@media (max-width:1100px){
+    .introduction-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduction-paragraph {
+        margin-bottom: 15px;
+    }
+
+    .programming-skills {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .projects .line {
+        display: none;
+    }
+
+    .about-section {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px
+    }
+
+    .about img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 780px){
+    
+    /* HEADER */
+
+    .header {
+        font-size: 0.8em;
+    }
+
+    /* INTRODUCTION */
+
+    .introduction-section h1 {
+        font-size: 0.9em;
+    }
+
+    .introduction-section p {
+        font-size: 0.7em;
+        margin-bottom: 0px;
+    }
+
+    .introduction-section .ctn {
+        font-size: 0.5em;
+    }
+
+    .introduction-section .line {
+        width: 90%;
+    }
+
+    /* KNOWLEDGES */
+
+    .knowledges h1,h4 {
+        font-size: 0.9em;
+    }
+
+    .knowledges p {
+        font-size: 0.7em;
+    }
+
+    .frameworks-skills {
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        align-items: center;
+    }
 }
