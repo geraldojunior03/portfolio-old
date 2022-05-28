@@ -206,8 +206,7 @@ ul {
 }
 
 .frameworks-skills {
-    display: grid;
-    grid-template-columns: repeat(3,auto);
+    display: flex;
     justify-content: center;
     gap: 5em;
     align-items: center;
