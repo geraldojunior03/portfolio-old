@@ -41,6 +41,10 @@ ul {
 
 /* start header */
 
+#responsive-button {
+    display: none;
+}
+
 .logo-color {
     color: var(--main-color);
 }
@@ -343,10 +347,6 @@ footer {
         flex-direction: column;
         margin-bottom: 40px
     }
-
-    .about img {
-        height: 300px;
-    }
 }
 
 @media (max-width: 780px){
@@ -391,4 +391,43 @@ footer {
         grid-template-columns: repeat(2,auto);
         align-items: center;
     }
+
+@media (max-width: 575px){
+    .navbar-links {
+        display: none;
+    }
+
+    .programming-skills img, .frameworks-skills img {
+        height: 100px;
+    }
+
+    #responsive-button {
+        display: flex;
+    }
+
+    .introduction-section img {
+        height: 300px;
+    }
+
+    .projects {
+        font-size: .75em;
+    }
+
+    .projects-desc img {
+        height: 100px;
+    }
+
+    .about {
+        font-size: .75em;
+    }
+
+    .about img {
+        margin-top: 0px;
+        height: 300px;
+    }
+
+    footer {
+        font-size: .75em;
+    }
+}
 }
