@@ -371,6 +371,10 @@ footer {
     .introduction-section .ctn {
         font-size: 0.5em;
     }
+    
+    .projects-desc img {
+        height: 60px;
+    }
 
     .introduction-section .line {
         width: 90%;
