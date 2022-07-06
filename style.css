@@ -323,7 +323,7 @@ footer {
 
 /* RESPONSIVE */
 
-@media (max-width:1100px){
+@media (max-width:991px){
     .introduction-section {
         display: flex;
         flex-direction: column;
@@ -349,7 +349,7 @@ footer {
     }
 }
 
-@media (max-width: 780px){
+@media (max-width: 768px){
     
     /* HEADER */
 
@@ -392,7 +392,7 @@ footer {
         align-items: center;
     }
 
-@media (max-width: 575px){
+@media (max-width: 450px){
     .navbar-links {
         display: none;
     }
