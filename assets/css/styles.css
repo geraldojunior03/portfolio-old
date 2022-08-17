@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300&display=swap');
+
+/* GERAL */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body,html  {
+    min-height: 100vh;
+    /* background: linear-gradient(to right, #a8c0ff, #3f2b96); */
+    /* background: linear-gradient(to right, #2b5876, #4e4376); */
+    background: linear-gradient(to left, #0f0c29, #302b63, #24243e);
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.line {
+    width: 300px;
+    height: 3px;
+    margin: 7px 0;
+    background-color: #fff;
+}
+
+/* CONTEUDO INICIAL */
+
+.conteudo-inicial {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nome {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.rodape-conteudo span{
+    display: flex;
+    color: #a8c0ff;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.botao {
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: bold;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;    
+    transition: .3s;
+    color: white;
+}
+
+.botao:hover {
+    color: var(--white);
+    letter-spacing: .12em;
+    box-shadow: 10px 10px 35px #a8c0ff;
+    color: white;
+}
+
+/* SOBRE MIM */
+
+.conteudo-principal {
+    background: url('../img/about.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 65vh;
+}
+
+.sobre-mim {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    height: 65vh;
+}
+
+.sobre-mim .line {
+    margin: 10px auto;
+}
+
+.sobre-conteudo {
+    color: white;
+    width: 40%;
+}
+
+.sobre-mim p {
+    margin-bottom: 25px;
+}
+
+.sobre-mim img {
+    margin-top: 20px;
+    width: 650px
+}
+
+.nome-colorido {
+    color: #05bd0e;
+}
+
+/* MEUS PROJETOS */
+
+.meus-projetos {
+    margin: 50px 0px;
+    text-align: center;
+}
+
+.projetos {
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    width: 720px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+.arrow-right, .arrow-left {
+    position: absolute;
+    border: none;
+    opacity: .4;
+    background: transparent;
+    border-radius: 50%;
+    text-align: center;
+    transition: .3s;
+    color: #fff;
+    cursor: pointer;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    opacity: 1;
+}
+
+
+.arrow-right {
+    right: 0;
+    left: auto;
+}
+
+.galeria-projetos {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+    transition: 1s linear;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-padding: 10px;
+    overflow: hidden;
+}
+
+.item {
+    width: 250px;
+    height: 400px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 0.5;
+}
+
+.atual {
+    opacity: 1;
+}
+
+.titulo-projetos {
+    color: #d4d4d4;
+    line-height: 2em;
+}
+
+.titulo-projetos .line {
+    margin: 10px auto;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #4a3c83;
+    width: 350px;
+    height: 400px;
+    border-radius: 20px;
+    transition: .5s;
+    padding: 0px 20px;
+}
+
+.card:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.637);
+}
+
+.card img {
+    height: 170px;
+    width: 200px;
+    margin: 20px;
+    border-radius: 10px;
+    background: #a49bcf;
+}
+
+.desc-social h1{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.desc-social p{
+    font-size: 1em;
+    margin-top: 10px;
+    color: #d4d4d4; 
+}
+
+.botoes {
+    margin-top: 30px;
+}
+
+.botoes a{
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    background: #806bdd;
+    color: #fff;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.botoes a:hover {
+    background: transparent;
+    letter-spacing: .2em;
+}
+
+/* CONHECIMENTOS */
+
+.sessao-conhecimentos {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    background: url('../img/knowledge.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.conhecimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 60vh;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
+    background: #806bdd;
+    margin-top: 20px;
+}
+
+.conhecimentos .line {
+    display: flex;
+    margin: 10px auto;
+}
+
+.conhecimentos h1,p {
+    color: white;
+}
+
+.galeria-conhecimentos {
+    width: 300px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.conhecimento {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.conhecimento svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.circulo {
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.circulo:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: #b8b6b6;
+}
+
+.circulo:nth-child(2) {
+    stroke: #b072f7;
+}
+
+/* CONHECIMENTOS NOMES */
+
+.html:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 85) / 100);
+}
+
+.dotnet:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 90) / 100);
+}
+
+.qa:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 65) / 100);
+}
+
+.sql:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 100) / 100);
+}
+
+.poo:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 70) / 100);
+}
+
+
+.porcentagem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e9e9e9;
+    font-size: 1.25em;
+}
+
+.porcentagem span {
+    font-size: .5em;
+}
+
+.categoria {
+    padding: 10px 0 0;
+    color: #fff;
+}
+
+/* CONTATO */
+
+
+/* RESPONSIVO */
+
+@media (max-width: 1130px){
+    /* sobre mim */
+
+    .sobre-mim{
+        font-size: .95em;
+    }
+
+    .sobre-mim img{
+        width: 550px;
+    }
+
+    .sobre-mim a {
+        font-size: .95em;
+    }
+}
+
+ 
