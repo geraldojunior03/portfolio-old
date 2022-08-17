@@ -10,8 +10,6 @@ Caso você encontre:<br>
 
 Não deixe de me avisar, isso irá nos ajudar bastante, já que você irá reforçar seu conhecimento me ensinando e irá me ajudar a aprender algo novo!
 
-Deseja acessar por link? <a href="https://geraldojunior03.github.io/portfolio/">Clique Aqui</a>
-
 ##
 
 ### Sobre o Portfolio
