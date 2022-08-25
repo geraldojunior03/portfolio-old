@@ -45,7 +45,7 @@ a {
     margin-bottom: 10px;
 }
 
-.rodape-conteudo span{
+.conteudo-final span{
     display: flex;
     color: #a8c0ff;
     font-size: 2em;
@@ -75,21 +75,18 @@ a {
 
 /* SOBRE MIM */
 
-.conteudo-principal {
+
+.sobre-mim {
     background: url('../img/about.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 65vh;
-}
-
-.sobre-mim {
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
     text-align: center;
-    height: 65vh;
 }
 
 .sobre-mim .line {
@@ -233,7 +230,7 @@ a {
     outline: none;
     font-size: 1em;
     font-weight: 500;
-    background: #806bdd;
+    background: transparent;
     color: #fff;
     border: 1px solid white;
     cursor: pointer;
@@ -242,7 +239,7 @@ a {
 }
 
 .botoes a:hover {
-    background: transparent;
+    background: #5e43c7;
     letter-spacing: .2em;
 }
 
@@ -268,8 +265,8 @@ a {
     height: 60vh;
     width: 90%;
     margin: 0 auto;
-    border-radius: 15px;
-    background: #806bdd;
+    border-radius: 50px;
+    background: #4a3c83;
     margin-top: 20px;
 }
 
@@ -369,16 +366,32 @@ a {
     color: #fff;
 }
 
-/* CONTATO */
+/* RODAPE */
 
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 150px;
+}
+
+.conteudo-direita a {
+    text-decoration: none;
+    color: #bb85f8;
+}
 
 /* RESPONSIVO */
 
-@media (max-width: 1130px){
-    /* sobre mim */
+@media (max-width: 991px){
+    /* SOBRE MIM */
 
     .sobre-mim{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
         font-size: .95em;
+        height: 75vh;
     }
 
     .sobre-mim img{
@@ -387,6 +400,94 @@ a {
 
     .sobre-mim a {
         font-size: .95em;
+    }
+
+    .sobre-mim .line {
+        width: 190px
+    }
+
+    /* PROJETOS */
+
+    .projetos {
+        width: 390px;
+    }
+
+    /* CONHECIMENTOS */
+
+    .sessao-conhecimentos {
+        height: 90vh;
+    }
+
+    .conhecimentos {
+        height: 600px;
+    }
+
+    .conhecimento:nth-last-child(2){
+        left: 50%;
+    }
+
+    .conhecimento:last-child {
+        left: 50%;
+    }
+
+    .galeria-conhecimentos {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .categoria {
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 588px){
+    /* SOBRE MIM */
+
+    .sobre-mim img {
+        width: 450px;
+    }
+
+    /* CONHECIMENTOS */
+
+    .conhecimentos-titulo {
+        margin-top: 30px;
+    }
+
+    .sessao-conhecimentos {
+        height: 980px;
+        font-size: .85em;
+    }
+
+    .conhecimentos {
+        height: 790px;
+        justify-content: unset;
+    }
+
+    .conhecimento:first-child, .conhecimento:nth-child(2) {
+        margin-top: 50px;
+    }
+
+    .conhecimento:nth-last-child(2){
+        left: 0%;
+    }
+
+    .conhecimento:last-child {
+        left: 50%;
+    }
+
+    .conhecimento {
+        margin-top: 30px;
+    }
+
+    .galeria-conhecimentos {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    /* RODAPE */
+
+    .rodape {
+        font-size: .8em;
     }
 }
 
