@@ -491,4 +491,38 @@ a {
     }
 }
 
- 
+@media (max-width: 450px){
+    /* CONTEUDO INICIAL */
+
+    .nome {
+        font-size: 2.5em;
+    }
+
+    /* SOBRE MIM */
+
+    .sobre-mim img {
+        width: 400px;
+    }
+
+    .rodape {
+        font-size: .7em;
+    }
+}
+
+@media (max-width: 400px){
+    /* SOBRE MIM */
+
+    .sobre-mim img {
+        width: 350px;
+    }
+
+    /* MEUS PROJETOS */
+
+    .projetos {
+        width: 345px;
+    }
+
+    .item {
+        width: 300px;
+    }
+}
