@@ -262,7 +262,7 @@ a {
     justify-content: center;
     text-align: center;
     align-items: center;
-    height: 60vh;
+    height: 432px;
     width: 90%;
     margin: 0 auto;
     border-radius: 50px;
@@ -525,4 +525,54 @@ a {
     .item {
         width: 300px;
     }
+}
+
+@media (max-width: 380px){
+    
+    /* NOME */
+
+    .nome{
+        font-size: 2em;
+    }
+
+    .conteudo-final {
+        font-size: 1em;
+    }
+
+    .conteudo-final span {
+        font-size: 1.5em;
+    }
+
+    .botao {
+        font-size: .8em;
+    }
+
+    /* CONTEUDO */
+
+    .sobre-conteudo .botao {
+        font-size: .8em;
+    }
+
+    /* CONHECIMENTOS */
+
+    .galeria-conhecimentos {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .conhecimento:last-child {
+        left: 0;
+    }
+
+    .sessao-conhecimentos {
+        height: 1400px;
+        font-size: .85em;
+        justify-content: center;
+    }
+
+    .conhecimentos {
+        height: 1300px;
+        justify-content: unset;
+    }
+    
 }
