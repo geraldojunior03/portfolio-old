@@ -491,7 +491,7 @@ a {
     }
 }
 
-@media (max-width: 450px){
+@media (max-width: 466px){
     /* CONTEUDO INICIAL */
 
     .nome {
@@ -509,7 +509,7 @@ a {
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 416px){
     /* SOBRE MIM */
 
     .sobre-mim img {
@@ -527,7 +527,7 @@ a {
     }
 }
 
-@media (max-width: 380px){
+@media (max-width: 391px){
     
     /* NOME */
 
