@@ -7,6 +7,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    position: static;
 }
 
 body,html  {
@@ -82,7 +83,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 60vh;
+    height: 565px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -248,7 +249,7 @@ a {
 .sessao-conhecimentos {
     display: flex;
     align-items: center;
-    height: 70vh;
+    height: 660px;
     background: url('../img/knowledge.jpg');
     background-position: center;
     background-size: cover;
@@ -366,6 +367,12 @@ a {
     color: #fff;
 }
 
+.categoria a {
+    padding: 10px 0 0;
+    color: #fff;
+    
+}
+
 /* RODAPE */
 
 .rodape {
@@ -391,7 +398,7 @@ a {
         flex-direction: column;
         gap: 30px;
         font-size: .95em;
-        height: 75vh;
+        height: 685px;
     }
 
     .sobre-mim img{
@@ -415,7 +422,7 @@ a {
     /* CONHECIMENTOS */
 
     .sessao-conhecimentos {
-        height: 90vh;
+        height: 845px;
     }
 
     .conhecimentos {
