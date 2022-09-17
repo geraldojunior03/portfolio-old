@@ -162,6 +162,7 @@ a {
     scroll-behavior: smooth;
     scroll-padding: 10px;
     overflow: hidden;
+    height: 430px;
 }
 
 .item {
@@ -207,6 +208,7 @@ a {
     margin: 20px;
     border-radius: 10px;
     background: #a49bcf;
+    object-fit: cover;
 }
 
 .desc-social h1{
@@ -244,6 +246,18 @@ a {
     letter-spacing: .2em;
 }
 
+.frameworks {
+    margin-top: 25px;
+    padding: 3px 10px;
+    background: #9386c9;
+    border-radius: 10px;
+}
+
+.frameworks p {
+    color: #4e2bd8;
+    font-weight: bold;
+}
+
 /* CONHECIMENTOS */
 
 .sessao-conhecimentos {
@@ -274,6 +288,10 @@ a {
 .conhecimentos .line {
     display: flex;
     margin: 10px auto;
+}
+
+.conhecimentos h1{
+    margin-top: 10px;
 }
 
 .conhecimentos h1,p {
@@ -520,7 +538,7 @@ a {
     /* SOBRE MIM */
 
     .sobre-mim img {
-        width: 350px;
+        width: 300px;
     }
 
     /* MEUS PROJETOS */
@@ -531,6 +549,10 @@ a {
 
     .item {
         width: 300px;
+    }
+
+    .frameworks p {
+        font-size: .8em;
     }
 }
 
