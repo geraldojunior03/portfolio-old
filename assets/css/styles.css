@@ -12,8 +12,6 @@
 
 body,html  {
     min-height: 100vh;
-    /* background: linear-gradient(to right, #a8c0ff, #3f2b96); */
-    /* background: linear-gradient(to right, #2b5876, #4e4376); */
     background: linear-gradient(to left, #0f0c29, #302b63, #24243e);
     scroll-behavior: smooth;
 }
@@ -29,28 +27,8 @@ a {
     background-color: #fff;
 }
 
-/* CONTEUDO INICIAL */
-
-.conteudo-inicial {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.nome {
-    font-size: 3em;
-    color: white;
-    margin-bottom: 10px;
-}
-
-.conteudo-final span{
-    display: flex;
-    color: #a8c0ff;
-    font-size: 2em;
-    margin-bottom: 20px;
+.nome-colorido {
+    color: #05bd0e;
 }
 
 .botao {
@@ -74,8 +52,31 @@ a {
     color: white;
 }
 
-/* SOBRE MIM */
+/* CONTEUDO INICIAL */
 
+.conteudo-inicial {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nome {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.conteudo-final span{ 
+    display: flex;
+    color: #a8c0ff;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* SOBRE MIM */
 
 .sobre-mim {
     background: url('../img/about.jpg');
@@ -106,10 +107,6 @@ a {
 .sobre-mim img {
     margin-top: 20px;
     width: 650px
-}
-
-.nome-colorido {
-    color: #05bd0e;
 }
 
 /* MEUS PROJETOS */
@@ -146,7 +143,6 @@ a {
 .arrow-left:hover, .arrow-right:hover {
     opacity: 1;
 }
-
 
 .arrow-right {
     right: 0;
@@ -223,11 +219,11 @@ a {
     color: #d4d4d4; 
 }
 
-.botoes {
+.botao-projeto {
     margin-top: 30px;
 }
 
-.botoes a{
+.botao-projeto a{
     padding: 10px 30px;
     border: none;
     outline: none;
@@ -241,7 +237,7 @@ a {
     transition: .3s;
 }
 
-.botoes a:hover {
+.botao-projeto a:hover {
     background: #5e43c7;
     letter-spacing: .2em;
 }
