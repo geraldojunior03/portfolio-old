@@ -1,3 +1,5 @@
+// ESCRITA QUALIDADES
+
 document.addEventListener('DOMContentLoaded', () => {
     new TypeIt(".texto-animado", {
         speed: 250,
@@ -16,6 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     .delete(16)
     .go();
 })
+
+// SLIDER PROJETOS
 
 console.clear();
 let items = document.querySelector(`.galeria-projetos`),
@@ -46,4 +50,20 @@ next.addEventListener('click', event => {
   items.scrollTo(currentChildren.offsetLeft - (items.offsetWidth - currentChildren.offsetWidth) / 2, currentChildren.offsetTop);
 });
 
+// SCROLL ANIMADO
 
+const $animatedItems = document.querySelectorAll('[data-anime]');
+const $animationClass = 'animate';
+
+function $scrollAnimation(){
+  const $topSize = window.pageYOffset + ((window.innerHeight * 2.5) / 4); 
+  $animatedItems.forEach(function(element){
+    if(($topSize) > element.offsetTop){
+      element.classList.add($animationClass)
+    }
+  })
+}
+
+window.addEventListener('scroll', function(){
+  $scrollAnimation();
+})
