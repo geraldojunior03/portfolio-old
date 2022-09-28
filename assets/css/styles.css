@@ -109,6 +109,24 @@ a {
     width: 650px
 }
 
+[data-anime]{
+    opacity: 0;
+    transition: .3s;
+}
+
+[data-anime="left"]{
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
 /* MEUS PROJETOS */
 
 .meus-projetos {
@@ -552,7 +570,7 @@ a {
     }
 }
 
-@media (max-width: 380px){
+@media (max-width: 391px){
     
     /* NOME */
 
