@@ -61,6 +61,9 @@ function $scrollAnimation(){
     if(($topSize) > element.offsetTop){
       element.classList.add($animationClass)
     }
+    else {
+      element.classList.remove($animationClass)
+    }
   })
 }
 
